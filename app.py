@@ -28,10 +28,10 @@ with st.sidebar:
         )
     )
 st.write("")
-    st.write("")
-    st.write("")
-    st.sidebar.markdown("How to get GROQ API Key?")    
-    st.sidebar.markdown("""
+st.write("")
+st.write("")
+st.sidebar.markdown("How to get GROQ API Key?")    
+st.sidebar.markdown("""
 - Login/Signup https://console.groq.com/keys 
 - Go to API Keys section
 - Name your api key and make it yours!
