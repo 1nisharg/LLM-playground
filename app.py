@@ -27,7 +27,17 @@ with st.sidebar:
             "gemma2-9b-it"
         )
     )
+st.write("")
+    st.write("")
+    st.write("")
+    st.sidebar.markdown("How to get GROQ API Key?")    
+    st.sidebar.markdown("""
+- Login/Signup https://console.groq.com/keys 
+- Go to API Keys section
+- Name your api key and make it yours!
+NOTE: You won't be able to see your API key again. Make sure you store it somewhere.  
 
+""")
 # Input section for user prompt
 prompt = st.text_area("Enter your prompt here:", height=7)
 
