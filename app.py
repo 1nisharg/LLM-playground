@@ -19,7 +19,6 @@ with st.sidebar:
     selected_llm = st.selectbox(
         "Select LLM Model:",
         (
-            "llama-3.1-70b-versatile", 
             "llama-3.1-8b-instant", 
             "llama3-8b-8192",
             "llama3-70b-8192", 
@@ -79,7 +78,7 @@ st.subheader("Compare Responses")
 cols = st.columns(2)
 
 with cols[0]:
-    model1 = st.selectbox("Select Model 1", ["llama-3.1-70b-versatile", "llama-3.1-8b-instant", "llama3-8b-8192", "llama3-70b-8192"])
+    model1 = st.selectbox("Select Model 1", [ "llama-3.1-8b-instant", "llama3-8b-8192", "llama3-70b-8192"])
     if st.button("Generate for Model 1"):
         response1, inference_time1, tokens_used1 = get_llm_response(model1, prompt, api_key)
         st.write(response1)
