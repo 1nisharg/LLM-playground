@@ -103,6 +103,7 @@ with cols[1]:
         st.write(f"Inference Time: {inference_time2:.2f}s")
         st.write(f"Tokens Used: {tokens_used2}")
 
+st.write("NOTE: If any model gives an error or gives issues. Kindly refresh the app or try changing your desired model or API Key.")
 # Footer
 st.write("---")
 st.markdown("**LLM Playground** © 2024 OpenRAG")
